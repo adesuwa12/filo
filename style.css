@@ -1,0 +1,194 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #0D8A4F;
+    --primary-blue: #1B3168;
+    --white: #FFFFFF;
+    --gray: #F5F5F5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--white);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.contact-btn {
+    background: var(--primary-green);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: var(--primary-blue);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.text-green {
+    color: var(--primary-green);
+}
+
+.about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.rig-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--gray);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Oil Barrel Section */
+.oil-barrel {
+    background: var(--primary-green);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.barrel-infographic {
+    margin-top: 50px;
+}
+
+.barrel-infographic img {
+    max-width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .about .container,
+    .service-cards,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
