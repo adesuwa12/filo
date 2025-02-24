@@ -83,7 +83,15 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
 }
-
+.span1{
+    display: flex;
+}
+.span1 h1{
+    font-size: 55px;
+}
+.span1 h2{
+    font-size: 55px;
+}
 /* About Section */
 .about {
     background: var(--primary-blue);
@@ -179,7 +187,15 @@ body {
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
-
+.contact-button{
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
