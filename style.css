@@ -107,6 +107,12 @@ body {
 .about-content {
     font-size: 20px;
 }
+.gradient-text {
+    background: linear-gradient(to right, #ffffff,#ffffff, #004AAD); /* Green to Blue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
 
 .text-green {
     color: var(--primary-green);
