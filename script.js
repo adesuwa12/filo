@@ -30,3 +30,6 @@ mobileMenuButton.addEventListener('click', function() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
