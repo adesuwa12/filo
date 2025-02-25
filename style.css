@@ -126,6 +126,9 @@ body {
     background: var(--white);
 }
 
+.service-header{
+    font-size: 20px;
+}
 .service-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -138,7 +141,23 @@ body {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+}.service-card2 {
+    background: var(--primary-blue);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
 }
+.service-card3 {
+    background: var(--primary-green);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
 
 /* Oil Barrel Section */
 .oil-barrel {
@@ -197,7 +216,7 @@ body {
     cursor: pointer;
 }
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .nav-links {
         display: none;
     }
@@ -206,6 +225,13 @@ body {
     .service-cards,
     .footer-content {
         grid-template-columns: 1fr;
+    }
+  
+}
+@media (max-width: 992px) {
+   
+    .span1 img{
+        display: none;
     }
 }
 .span1{
