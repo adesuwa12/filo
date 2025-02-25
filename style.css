@@ -208,3 +208,9 @@ body {
         grid-template-columns: 1fr;
     }
 }
+.span1{
+    width: 100%;
+}
+.span1 img{
+    border-radius: 30px;
+}
