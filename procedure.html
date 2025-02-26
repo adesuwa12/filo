@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIAJOE Petroleum Corporation</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
         * {
             margin: 0;
@@ -23,7 +25,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        nav {
+        /* nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -45,7 +47,7 @@
             text-decoration: none;
             color: #333;
             font-weight: 500;
-        }
+        } */
 
         .contact-btn {
             background: #0A8A43;
@@ -57,8 +59,8 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                        url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/procedure-Q2mAgFGffqdV9yYmFZMqkGOLJTy84L.png');
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(226, 226, 226, 0.5)),
+                        url('/img/Rectangle\ 36.png');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -224,16 +226,26 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="logo.png" alt="FIAJOE" class="logo">
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#procedures">PROCEDURES</a></li>
-                <li><a href="#product">PRODUCT</a></li>
-                <li><a href="#contact" class="contact-btn">CONTACT US</a></li>
-            </ul>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="abt.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="HOME.png" alt="Company Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">PROCEDURES</a></li>
+                    <li><a href="ptt.html">PRODUCT</a></li>
+                    <li><a href="contact.html" class="contact">CONTACT US</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -332,5 +344,7 @@
             header.classList.toggle('sticky', window.scrollY > 0);
         });
     </script>
+    <script src="script.js"></script>
+
 </body>
 </html>

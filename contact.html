@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - FIAJOE Petroleum Corporation</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
         * {
             margin: 0;
@@ -19,7 +21,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        nav {
+        /* nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,7 +43,7 @@
             text-decoration: none;
             color: #333;
             font-weight: 500;
-        }
+        } */
 
         .contact-btn {
             background: #0A8A43;
@@ -199,23 +201,30 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#services">SERVICES</a></li>
-            </ul>
-            <img src="logo.png" alt="FIAJOE" class="logo">
-            <ul class="nav-links">
-                <li><a href="#procedures">PROCEDURES</a></li>
-                <li><a href="#product">PRODUCT</a></li>
-                <li><a href="#contact" class="contact-btn">CONTACT US</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="abt.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="HOME.png" alt="Company Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="procedure.html">PROCEDURES</a></li>
+                    <li><a href="ptt.html">PRODUCT</a></li>
+                    <li><a href="#" class="contact">CONTACT US</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main class="contact-section">
-        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/contact%20us-Zm8GX6NhSOfa2JTOHDfb55b4Wc3DG2.png" alt="Industrial Facility" class="contact-image">
+        <img src="img/Rectangle 17.png" alt="Industrial Facility" class="contact-image">
         <form class="contact-form" id="contactForm">
             <div class="form-row">
                 <div class="form-group">
@@ -308,5 +317,7 @@
             });
         });
     </script>
+    <script src="script.js"></script>
+
 </body>
 </html>
