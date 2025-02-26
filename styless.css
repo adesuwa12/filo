@@ -3,6 +3,7 @@
     --primary-green: #00a651;
     --text-dark: #333;
     --gradient-bg: linear-gradient(to bottom, #001440, #003366);
+    
 }
 
 * {
@@ -23,7 +24,7 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav {
+/* nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -47,7 +48,7 @@ nav {
 .logo img {
     height: 50px;
     object-fit: contain;
-}
+} */
 
 .contact-btn {
     background: var(--primary-green);
@@ -153,15 +154,16 @@ td:last-child {
     align-items: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+    
 }
 
 .supply-text {
     font-size: 1.2rem;
-    color: var(--primary-blue);
+    color: #fff;
 }
 
 /* Footer Styles */
-footer {
+.footer2 {
     background: #6b7399;
     color: white;
     padding: 4rem 2rem 1rem;

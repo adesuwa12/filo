@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIAJOE - Petroleum Corporation</title>
-    <link rel="stylesheet" href="styless.css">
+   
+    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="styless.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-links">
-                <a href="index.html" class="nav-item">HOME</a>
-                <a href="abt.html" class="nav-item">ABOUT US</a>
-                <a href="#" class="nav-item">SERVICES</a>
-            </div>
-            <div class="logo">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/filo-ur2CU1LV7x9nhqBhvDpnRfCUwT7KS2.png" alt="FIAJOE Logo">
-            </div>
-            <div class="nav-links">
-                <a href="#" class="nav-item">PROCEDURES</a>
-                <a href="ptt.html" class="nav-item">PRODUCT</a>
-                <a href="#" class="nav-item contact-btn">CONTACT US</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="HOME.png" alt="Company Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">PROCEDURES</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#" class="contact">CONTACT US</a></li>
+                </ul>
             </div>
         </nav>
+    
     </header>
 
     <main>
@@ -42,7 +50,7 @@
         <section class="specifications">
             <div class="specs-container">
                 <div class="oil-visual">
-                    <img src="oil-barrels.svg" alt="Oil Barrels Illustration" class="barrel-image">
+                    <img src="img/Rectangle 46.png" alt="Oil Barrels Illustration" class="barrel-image">
                     <button class="market-price-btn">LIVE MARKET PRICE</button>
                 </div>
                 <div class="specs-table">
@@ -106,31 +114,36 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/filo-ur2CU1LV7x9nhqBhvDpnRfCUwT7KS2.png" alt="FIAJOE Logo">
+    <footer class="footer footer2">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="FIAJOE">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#procedures">PROCEDURES</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#product">PRODUCT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5930731215044!2d5.600913409697398!3d6.317062425503295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d249831048d1%3A0xa273e40648378c1c!2sBenin%20City%20Airport!5e0!3m2!1sen!2sng!4v1740495901489!5m2!1sen!2sng" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">PROCEDURES</a>
-                <a href="#">SERVICES</a>
-                <a href="#">PRODUCT</a>
-            </div>
-            <div class="footer-map">
-                <img src="map.jpg" alt="Location Map" class="map-image">
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright ©2024 All rights reserved</p>
-            <div class="social-icons">
-                <a href="#" class="social-icon">LinkedIn</a>
-                <a href="#" class="social-icon">Facebook</a>
-                <a href="#" class="social-icon">Instagram</a>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 All rights reserved</p>
+                <div class="social-links">
+                    <a href="#"><i class="linkedin"></i></a>
+                    <a href="#"><i class="facebook"></i></a>
+                    <a href="#"><i class="instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 
     <script src="scripts.js"></script>
 </body>
